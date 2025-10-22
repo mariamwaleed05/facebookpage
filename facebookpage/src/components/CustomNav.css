@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  color: #1877f2;
+  font-weight: bold;
+}
+
+.nav-icons i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.nav-icons .active {
+  color: #1877f2;
+}
+
+/* Page layout */
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+  width: 20%;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.watch-section ul,
+.group-list {
+  list-style: none;
+  padding: 0;
+}
+
+.watch-section li,
+.group-list li {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Feed */
+.feed {
+  width: 55%;
+}
+
+.stories {
+  display: flex;
+  gap: 10px;
+}
+
+.story {
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.story img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.create-post {
+  background: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.create-post input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Right Sidebar */
+.sidebar-right {
+  width: 23%;
+}
+
+.sidebar-right h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.friend-card button {
+  margin-right: 5px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.friend-card .confirm {
+  background: #1877f2;
+  color: white;
+}
+
+.friend-card .delete {
+  background: #e4e6eb;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 5px 0;
+}

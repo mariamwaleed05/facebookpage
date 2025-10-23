@@ -15,28 +15,6 @@ const CustomNav = () => {
         </div>
       </header>
 
-      <aside className="sidebar-left">
-      <button className="confirm-btn">Confirm</button>
-
-      <div className="watch-section">
-        <p> Watch</p>
-                <p> Watch</p>
-        <p> Watch</p>
-        <p> Watch</p>
-
-        <ul>
-          
-        </ul>
-      </div>
-
-
-      <h3>Titles</h3>
-      <ul className="group-list">
-        <li><img src="https://i.pravatar.cc/40?img=11" alt="" /> UI / UX Designers</li>
-        <li><img src="https://i.pravatar.cc/40?img=12" alt="" /> Frontend Devs</li>
-        <li><img src="https://i.pravatar.cc/40?img=13" alt="" /> Product Managers</li>
-      </ul>
-    </aside>
 
     </>
   );

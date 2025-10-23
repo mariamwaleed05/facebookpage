@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Sidebar';
-
+import './Sidebar.css';
+import image from './../imgs/image.png';
 
 const Sidebar = () => {
   return (
@@ -8,11 +8,12 @@ const Sidebar = () => {
       <button className="confirm-btn">Confirm</button>
 
       <div className="watch-section">
+
+     <img src={image} />
         <p>Watch</p>
         <ul>
           {[1, 2, 3, 4].map((n) => (
             <li key={n}>
-              <img src="https://via.placeholder.com/40" alt="Watch" />
             </li>
           ))}
         </ul>

@@ -1,37 +1,41 @@
-import React from 'react';
-import './MainContent.css'; // Link to its CSS file
-import WhatOnYourMind from './WhatOnYourMind'; // Child component
-import PostCard from './PostCard'; // Child component
+import React from "react";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./MainContent.css";
+import WhatOnYourMind from "./WhatOnYourMind";
+import PostCard from "./PostCard";
 
 function MainContent() {
   return (
     <div className="mainContent">
-      {/* The "What's on your mind?" section */}
+      {/* "What's on your mind?" input area */}
       <WhatOnYourMind userName="Jenny" />
 
-      {/* Example Posts - you would typically fetch these from an API */}
+      {/* Example Post 1 */}
       <PostCard
         userName="Albert Flores"
-        userProfilePic="https://via.placeholder.com/50/FF4500/fff?text=AF" // Example profile pic
+        userProfilePic="https://randomuser.me/api/portraits/men/21.jpg"
         timestamp="1h"
         text="Enjoying the stunning views at Moraine Lake today! Nature's beauty truly is unparalleled. 🏔️ #NatureLover #MoraineLake #Travel"
-        postImage="https://via.placeholder.com/600x400/87CEEB/fff?text=Moraine+Lake+View" // Example post image
+        postImage="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
       />
+
+      {/* Example Post 2 */}
       <PostCard
         userName="Jane Doe"
-        userProfilePic="https://via.placeholder.com/50/6A5ACD/fff?text=JD"
+        userProfilePic="https://randomuser.me/api/portraits/women/32.jpg"
         timestamp="3h"
         text="Just wrapped up my latest React project! So much learning and problem-solving. Feeling accomplished! ✨ #ReactDev #CodingLife"
-        postImage="https://via.placeholder.com/600x400/90EE90/fff?text=React+Project"
+        postImage="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
       />
+
+      {/* Example Post 3 */}
       <PostCard
         userName="John Smith"
-        userProfilePic="https://via.placeholder.com/50/1E90FF/fff?text=JS"
+        userProfilePic="https://randomuser.me/api/portraits/men/45.jpg"
         timestamp="5h"
         text="A productive morning coding session calls for a strong coffee. What's your go-to coding beverage? ☕ #CoffeeBreak #Developer"
-        postImage="https://via.placeholder.com/600x400/D3D3D3/000?text=Coffee+and+Code"
+        postImage="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
       />
-      {/* You can add more PostCard components here as needed */}
     </div>
   );
 }

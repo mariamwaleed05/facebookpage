@@ -1,46 +1,71 @@
 .friendRequestCard {
+  width: 195px; 
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 12px;
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* Space out content and button */
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  gap: 10px;
 }
 
-.friendRequestCard__content {
+.friendRequestCard__header {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .friendRequestCard__avatar {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .friendRequestCard__info h4 {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 15px;
+  font-weight: 600;
   color: #050505;
 }
 
 .friendRequestCard__info p {
-  margin: 0;
-  font-size: 0.8rem;
+  margin: 3px 0 0 0;
+  font-size: 13px;
   color: #65676b;
 }
 
-.friendRequestCard__confirmButton {
-  background-color: #1a77f2; /* Facebook blue */
-  color: #fff;
-  padding: 6px 10px;
-  font-size: 0.85rem;
+.friendRequestCard__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
 }
 
-.friendRequestCard__confirmButton:hover {
-  background-color: #1864cc; /* Darker blue on hover */
+.friendRequestCard__buttons button {
+  flex: 1;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.confirm {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.delete {
+  background-color: #e4e6eb;
+  color: #050505;
+}
+
+.confirm i,
+.delete i {
+  margin-right: 5px;
+  font-size: 13px;
 }

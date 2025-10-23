@@ -7,10 +7,8 @@ import PostCard from "./PostCard";
 function MainContent() {
   return (
     <div className="mainContent">
-      {/* "What's on your mind?" input area */}
       <WhatOnYourMind userName="Jenny" />
 
-      {/* Example Post 1 */}
       <PostCard
         userName="Albert Flores"
         userProfilePic="https://randomuser.me/api/portraits/men/21.jpg"
@@ -19,7 +17,6 @@ function MainContent() {
         postImage="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
       />
 
-      {/* Example Post 2 */}
       <PostCard
         userName="Jane Doe"
         userProfilePic="https://randomuser.me/api/portraits/women/32.jpg"
@@ -28,7 +25,6 @@ function MainContent() {
         postImage="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
       />
 
-      {/* Example Post 3 */}
       <PostCard
         userName="John Smith"
         userProfilePic="https://randomuser.me/api/portraits/men/45.jpg"

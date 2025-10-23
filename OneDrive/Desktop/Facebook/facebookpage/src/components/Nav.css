@@ -1,0 +1,112 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Ensure it stays on top */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 56px; /* Standard Facebook header height */
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  flex: 0.33; /* Take up one-third of the space */
+}
+
+.nav__facebookIcon {
+  color: #1a77f2; /* Facebook blue */
+  font-size: 2.5rem; /* Adjust icon size */
+  margin-right: 10px;
+}
+
+.nav__searchInput {
+  border: none;
+  background-color: #f0f2f5; /* Light grey background */
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: none; /* Remove outline on focus */
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 240px; /* Limit search bar width */
+}
+
+.nav__center {
+  display: flex;
+  flex: 0.33;
+  justify-content: center;
+  gap: 5px; /* Space between nav options */
+}
+
+.nav__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent; /* For active state */
+  transition: background-color 0.2s, border-bottom 0.2s;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.nav__option:hover {
+  background-color: #f0f2f5;
+  border-radius: 8px;
+}
+
+.nav__option--active {
+  border-bottom: 3px solid #1a77f2; /* Active tab underline */
+}
+
+.nav__option--active .nav__icon {
+  color: #1a77f2;
+}
+
+.nav__icon {
+  font-size: 1.8rem;
+  color: #65676b; /* Grey color for icons */
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  flex: 0.33;
+  justify-content: flex-end; /* Push items to the right */
+  gap: 10px;
+}
+
+.nav__profilePic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.nav__info h4 {
+  margin: 0 10px 0 5px; /* Adjust spacing */
+  font-size: 0.9rem;
+  color: #050505;
+}
+
+.nav__rightIcon {
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #050505;
+  transition: background-color 0.2s;
+}
+
+.nav__rightIcon:hover {
+  background-color: #d8dadf;
+}

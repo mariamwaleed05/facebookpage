@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  color: #1877f2;
+  font-weight: bold;
+}
+
+.nav-icons i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.nav-icons .active {
+  color: #1877f2;
+}

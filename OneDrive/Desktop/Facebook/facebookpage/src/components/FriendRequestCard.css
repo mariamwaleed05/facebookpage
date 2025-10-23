@@ -1,0 +1,46 @@
+.friendRequestCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out content and button */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.friendRequestCard__content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friendRequestCard__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friendRequestCard__info h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #050505;
+}
+
+.friendRequestCard__info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #65676b;
+}
+
+.friendRequestCard__confirmButton {
+  background-color: #1a77f2; /* Facebook blue */
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.friendRequestCard__confirmButton:hover {
+  background-color: #1864cc; /* Darker blue on hover */
+}

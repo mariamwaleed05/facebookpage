@@ -1,0 +1,43 @@
+.trendingNewsCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.trendingNewsCard:hover {
+  background-color: #f0f2f5;
+}
+
+.trendingNewsCard__thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px; /* Slightly rounded corners */
+  object-fit: cover;
+}
+
+.trendingNewsCard__content {
+  flex: 1; /* Take up remaining space */
+}
+
+.trendingNewsCard__category {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #65676b;
+}
+
+.trendingNewsCard__content h4 {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #050505;
+}
+
+.trendingNewsCard__description {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #65676b;
+}

@@ -1,0 +1,66 @@
+.adCard {
+  display: flex;
+  flex-direction: column; /* Stack header and actions vertically */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  gap: 10px; /* Space between header and actions */
+}
+
+.adCard__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adCard__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.adCard__info h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #050505;
+}
+
+.adCard__info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #65676b;
+}
+
+.adCard__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.adCard__confirmButton,
+.adCard__deleteButton {
+  flex: 1; /* Make buttons take equal space */
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+.adCard__confirmButton {
+  background-color: #1a77f2;
+  color: #fff;
+}
+
+.adCard__confirmButton:hover {
+  background-color: #1864cc;
+}
+
+.adCard__deleteButton {
+  background-color: #e4e6eb;
+  color: #050505;
+}
+
+.adCard__deleteButton:hover {
+  background-color: #d8dadf;
+}

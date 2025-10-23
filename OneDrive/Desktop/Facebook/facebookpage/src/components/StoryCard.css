@@ -1,0 +1,36 @@
+.storyCard {
+  position: relative;
+  min-width: 110px; /* Width of a story card */
+  height: 180px; /* Height of a story card */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push avatar to top, name to bottom */
+  padding: 10px;
+}
+
+.storyCard:hover {
+  transform: scale(1.02);
+}
+
+.storyCard__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a77f2; /* Facebook blue border */
+  margin-bottom: auto; /* Push to top */
+}
+
+.storyCard h4 {
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Make text more readable */
+}

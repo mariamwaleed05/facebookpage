@@ -1,0 +1,25 @@
+.watchNavItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  color: #050505; /* Default text color */
+}
+
+.watchNavItem:hover {
+  background-color: #f0f2f5;
+}
+
+.watchNavItem__icon {
+  font-size: 1.5rem; /* Adjust icon size */
+  margin-right: 10px;
+  color: #1a77f2; /* Example blue icon */
+}
+
+.watchNavItem span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}

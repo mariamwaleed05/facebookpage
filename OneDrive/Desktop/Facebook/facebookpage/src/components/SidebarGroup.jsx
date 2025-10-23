@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUsers } from "react-icons/fa"; // default icon if you want to use icons
+import { FaUsers } from "react-icons/fa"; 
 import "./SidebarGroup.css";
 
 export default function SidebarGroup({ name, icon, IconComponent }) {

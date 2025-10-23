@@ -15,13 +15,11 @@
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* hover effects */
 .storyCard:hover {
   transform: scale(1.04);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* avatar styling */
 .storyCard__avatar {
   position: absolute;
   top: 8px;
@@ -29,11 +27,11 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 3px solid #1877f2; /* Facebook blue ring */
+  border: 3px solid #1877f2; 
   object-fit: cover;
 }
 
-/* name text */
+
 .storyCard__name {
   font-size: 14px;
   font-weight: 600;
@@ -41,7 +39,7 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* dark overlay for better text contrast */
+
 .storyCard::after {
   content: "";
   position: absolute;

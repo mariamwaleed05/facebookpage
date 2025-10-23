@@ -1,36 +1,60 @@
 .storyCard {
   position: relative;
-  min-width: 110px; /* Width of a story card */
-  height: 180px; /* Height of a story card */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  width: 110px;
+  height: 190px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
-  transition: transform 0.2s;
-  background-size: cover; /* Cover the entire area */
-  background-position: center; /* Center the background image */
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Push avatar to top, name to bottom */
-  padding: 10px;
+  justify-content: flex-end;
+  color: white;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* hover effects */
 .storyCard:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* avatar styling */
 .storyCard__avatar {
-  width: 30px;
-  height: 30px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
+  border: 3px solid #1877f2; /* Facebook blue ring */
   object-fit: cover;
-  border: 3px solid #1a77f2; /* Facebook blue border */
-  margin-bottom: auto; /* Push to top */
 }
 
-.storyCard h4 {
-  color: #fff;
-  font-size: 0.8rem;
-  margin: 0;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Make text more readable */
+/* name text */
+.storyCard__name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* dark overlay for better text contrast */
+.storyCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 10%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  z-index: 0;
+}
+
+.storyCard__avatar,
+.storyCard__name {
+  z-index: 1;
 }

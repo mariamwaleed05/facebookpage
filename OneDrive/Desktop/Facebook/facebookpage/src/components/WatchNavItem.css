@@ -1,25 +1,29 @@
 .watchNavItem {
   display: flex;
   align-items: center;
-  padding: 8px 10px;
-  margin-bottom: 5px;
-  cursor: pointer;
+  gap: 10px;
+  padding: 8px 12px;
   border-radius: 8px;
-  transition: background-color 0.2s;
-  color: #050505; /* Default text color */
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #050505;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .watchNavItem:hover {
   background-color: #f0f2f5;
+  transform: translateY(-1px);
 }
 
 .watchNavItem__icon {
-  font-size: 1.5rem; /* Adjust icon size */
-  margin-right: 10px;
-  color: #1a77f2; /* Example blue icon */
+  font-size: 1.3rem;
+  color: #1a77f2;
 }
 
-.watchNavItem span {
-  font-size: 0.95rem;
+.watchNavItem__text {
+  font-size: 15px;
   font-weight: 500;
+  color: #050505;
 }

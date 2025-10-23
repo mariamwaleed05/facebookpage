@@ -1,27 +1,66 @@
 .sidebarGroup {
   display: flex;
   align-items: center;
-  padding: 8px 10px;
-  margin-bottom: 5px;
-  cursor: pointer;
+  gap: 12px;
+  padding: 10px 14px;
   border-radius: 8px;
-  transition: background-color 0.2s;
+  cursor: pointer;
+  transition: background-color 0.18s ease, transform 0.12s ease;
   color: #050505;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .sidebarGroup:hover {
   background-color: #f0f2f5;
+  transform: translateY(-1px);
 }
 
-.sidebarGroup__icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+.sidebarGroup__media {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarGroup__iconImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px; 
   object-fit: cover;
-  margin-right: 10px;
+  display: block;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
 }
 
-.sidebarGroup span {
-  font-size: 0.95rem;
-  font-weight: 500;
+.sidebarGroup__iconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #e6f0ff 0%, #dbeeff 100%);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+.sidebarGroup__iconSvg {
+  color: #1a77f2;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebarGroup__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 170px;
+}
+
+@media (max-width: 720px) {
+  .sidebarGroup__label {
+    max-width: 120px;
+    font-size: 14px;
+  }
 }

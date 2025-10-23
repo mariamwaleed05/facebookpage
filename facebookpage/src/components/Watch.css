@@ -1,0 +1,10 @@
+.box {
+     display: flex;
+     justify-content: left;
+     gap: 5px;
+     align-items: center;
+     margin-left: 10px;
+}
+.imgg {
+     width: 20px;
+}

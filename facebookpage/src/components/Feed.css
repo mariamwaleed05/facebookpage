@@ -1,0 +1,222 @@
+.feed {
+  flex: 1;
+  padding: 20px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.story__reel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 590px;
+      margin-top: 61px;
+      justify-content: center;
+}
+
+.story {
+  position: relative;
+  width: 110px;
+  height: 190px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story:hover {
+  transform: scale(1.05);
+}
+
+.story > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story__avatar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #1877f2;
+  overflow: hidden;
+}
+
+.story__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story__name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+/* Message Sender Styles */
+.message__sender {
+  width: 100%;
+  max-width: 590px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message__sender__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e4e6eb;
+}
+
+.message__sender__top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message__sender__top input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #f0f2f5;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.message__sender__top input::placeholder {
+  color: #65676b;
+}
+
+.message__sender__bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.message__sender__option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.message__sender__option:hover {
+  background-color: #f0f2f5;
+}
+
+.message__sender__option .icon {
+  font-size: 24px;
+}
+
+.message__sender__option span:last-child {
+  color: #65676b;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Post Styles */
+.post {
+  width: 100%;
+  max-width: 590px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post__top {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.post__avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post__info {
+  flex: 1;
+}
+
+.post__info h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #050505;
+}
+
+.post__info p {
+  margin: 0;
+  font-size: 13px;
+  color: #65676b;
+}
+
+.post__options {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  font-size: 24px;
+  color: #65676b;
+}
+
+.post__options:hover {
+  background-color: #f0f2f5;
+}
+
+.post__image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+@media (max-width: 1200px) {
+  .feed {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feed {
+    padding: 10px;
+  }
+
+  .story__reel {
+    gap: 5px;
+  }
+
+  .story {
+    width: 90px;
+    height: 160px;
+  }
+
+  .message__sender__bottom {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

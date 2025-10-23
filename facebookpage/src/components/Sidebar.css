@@ -1,35 +1,31 @@
 .sidebar-left {
-  width: 20%;
-  margin-left:15px;
-}
-.sidebar-left .confirm-btn {
-  width: 100%;
-  background: #1877f2;
-  color: white;
-  border: none;
+  width: 250px;
   padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
+  background: #fff;
 }
-.sidebar-left img {
-  border-radius: 8px;
-}
-.sidebar-left {
-  width: 20%;
-}
-.sidebar-left .confirm-btn {
-  width: 100%;
-  background: #1877f2;
-  color: white;
+.confirm-btn {
+  background-color: #1877f2;
+  color: #fff;
   border: none;
-  padding: 10px;
   border-radius: 6px;
+  padding: 8px 16px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
-.sidebar-left img {
-  border-radius: 8px;
+.watch-links p {
+  background: #f0f2f5;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
 }
-button {
-  background-color:blue;
-  margin-top:15px;
+.group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+.group-item img {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
 }

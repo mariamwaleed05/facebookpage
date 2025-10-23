@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CustomNav from './components/CustomNav';
-import './index.css';
-import Nav from './'
-import App from './App';
+import CustomNav from './components/CustomNav.jsx';
+
+import Sidebar from './components/Sidebar.jsx'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CustomNav/>
+        <CustomNav/>
+        <Sidebar/>
  </React.StrictMode>
 );
 

@@ -1,0 +1,15 @@
+.sidebar-left {
+  width: 20%;
+}
+.sidebar-left .confirm-btn {
+  width: 100%;
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sidebar-left img {
+  border-radius: 8px;
+}

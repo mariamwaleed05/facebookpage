@@ -1,0 +1,10 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the "What's on your mind" and individual posts */
+  padding-bottom: 20px; /* Add some padding at the bottom for scrolling */
+}
+
+/* No specific styling unique to .mainContent itself beyond flex properties,
+   as it primarily acts as a container for other components.
+   Its width and positioning are controlled by the .home__feed in Home.css. */

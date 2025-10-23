@@ -1,15 +1,15 @@
 import React from 'react';
 import './Home.css'; // Updated CSS import to Home.css
-import Nav from './components/Nav'; // Updated import path and component name
-import FriendRequestCard from './components/FriendRequestCard';
-import WatchNavItem from './components/WatchNavItem';
-import StoryCard from './components/StoryCard';
-import AdCard from './components/AdCard';
-import TrendingNewsCard from './components/TrendingNewsCard';
-import WhatOnYourMind from './components/WhatOnYourMind';
-import SidebarGroup from './components/SidebarGroup';
-import PostCard from './components/PostCard';
-import MainContent from './components/MainContent';
+import Nav from '../components/Nav'; // Go up one level (from 'pages' to 'src'), then into 'components'
+import FriendRequestCard from '../components/FriendRequestCard';
+import WatchNavItem from '../components/WatchNavItem';
+import StoryCard from '../components/StoryCard';
+import AdCard from '../components/AdCard';
+import TrendingNewsCard from '../components/TrendingNewsCard';
+import WhatOnYourMind from '../components/WhatOnYourMind';
+import SidebarGroup from '../components/SidebarGroup';
+import PostCard from '../components/PostCard';
+import MainContent from '../components/MainContent';
 
 // Renamed from App to Home
 function Home() {

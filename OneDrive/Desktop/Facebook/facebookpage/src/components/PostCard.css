@@ -1,0 +1,102 @@
+.postCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between posts */
+}
+
+.postCard__header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  position: relative; /* For ellipsis positioning */
+}
+
+.postCard__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.postCard__info {
+  flex: 1; /* Take up available space */
+}
+
+.postCard__info h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #050505;
+}
+
+.postCard__info p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #65676b;
+}
+
+.postCard__headerOptions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #65676b;
+  cursor: pointer;
+  padding: 5px; /* Make clickable area larger */
+  border-radius: 50%;
+}
+
+.postCard__headerOptions:hover {
+  background-color: #f0f2f5;
+}
+
+
+.postCard__body {
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.postCard__text {
+  font-size: 0.95rem;
+  color: #050505;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.postCard__image {
+  width: 100%;
+  max-height: 500px; /* Limit image height */
+  object-fit: contain; /* Ensure image is fully visible, or cover depending on preference */
+  background-color: #f0f2f5; /* Placeholder background */
+  margin-top: 10px;
+}
+
+.postCard__footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e4e6eb;
+  padding: 8px 0;
+  margin-top: 10px;
+}
+
+.postCard__footerOption {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #65676b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.postCard__footerOption:hover {
+  background-color: #f0f2f5;
+}
+
+.postCard__footerIcon {
+  font-size: 1.1rem;
+}

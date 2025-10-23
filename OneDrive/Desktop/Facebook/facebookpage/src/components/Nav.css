@@ -1,3 +1,4 @@
+/* src/components/Nav.css */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -7,39 +8,39 @@
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
-  z-index: 100; /* Ensure it stays on top */
+  z-index: 100;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  height: 56px; /* Standard Facebook header height */
+  height: 56px;
 }
 
 .nav__left {
   display: flex;
   align-items: center;
-  flex: 0.33; /* Take up one-third of the space */
+  flex: 0.33;
 }
 
 .nav__facebookIcon {
-  color: #1a77f2; /* Facebook blue */
-  font-size: 2.5rem; /* Adjust icon size */
+  color: #1a77f2;
+  font-size: 2.5rem;
   margin-right: 10px;
 }
 
 .nav__searchInput {
   border: none;
-  background-color: #f0f2f5; /* Light grey background */
+  background-color: #f0f2f5;
   padding: 10px 15px;
   border-radius: 20px;
-  outline: none; /* Remove outline on focus */
+  outline: none;
   font-size: 0.9rem;
   width: 100%;
-  max-width: 240px; /* Limit search bar width */
+  max-width: 240px;
 }
 
 .nav__center {
   display: flex;
   flex: 0.33;
   justify-content: center;
-  gap: 5px; /* Space between nav options */
+  gap: 5px;
 }
 
 .nav__option {
@@ -48,9 +49,9 @@
   justify-content: center;
   padding: 10px 30px;
   cursor: pointer;
-  border-bottom: 3px solid transparent; /* For active state */
+  border-bottom: 3px solid transparent;
   transition: background-color 0.2s, border-bottom 0.2s;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
 }
 
 .nav__option:hover {
@@ -59,7 +60,7 @@
 }
 
 .nav__option--active {
-  border-bottom: 3px solid #1a77f2; /* Active tab underline */
+  border-bottom: 3px solid #1a77f2;
 }
 
 .nav__option--active .nav__icon {
@@ -68,27 +69,33 @@
 
 .nav__icon {
   font-size: 1.8rem;
-  color: #65676b; /* Grey color for icons */
+  color: #65676b;
 }
 
 .nav__right {
   display: flex;
   align-items: center;
   flex: 0.33;
-  justify-content: flex-end; /* Push items to the right */
+  justify-content: flex-end;
   gap: 10px;
 }
 
-.nav__profilePic {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
+.nav__profileIcon { /* New class for the user profile icon */
+  font-size: 1.8rem; /* Adjust size to match other icons if needed */
+  color: #65676b;
   cursor: pointer;
+  /* Add styling for the circle background if desired */
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__info h4 {
-  margin: 0 10px 0 5px; /* Adjust spacing */
+  margin: 0 5px;
   font-size: 0.9rem;
   color: #050505;
 }

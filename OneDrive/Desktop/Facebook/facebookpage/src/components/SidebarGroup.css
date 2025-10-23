@@ -1,0 +1,27 @@
+.sidebarGroup {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  color: #050505;
+}
+
+.sidebarGroup:hover {
+  background-color: #f0f2f5;
+}
+
+.sidebarGroup__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.sidebarGroup span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
